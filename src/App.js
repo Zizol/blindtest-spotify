@@ -43,6 +43,7 @@ class App extends Component {
         </header>
         <div className="App-images">
           <p>Il va falloir modifier le code pour faire un vrai Blindtest !</p>
+          <p>Eh ouais mon gars t'as cru qu'il te suffirait de faire git clone pour que ca marche ?</p>
         </div>
         <div className="App-buttons">
         </div>
