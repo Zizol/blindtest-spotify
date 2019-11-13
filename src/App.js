@@ -32,6 +32,13 @@ class App extends Component {
 
   constructor() {
     super();
+    this.state = {
+    text: ""
+  };
+  }
+
+  componentDidMount() {
+    this.setState({ text: "Bonjour"})
   }
 
   render() {
@@ -44,12 +51,14 @@ class App extends Component {
         <div className="App-images">
           <p>Il va falloir modifier le code pour faire un vrai Blindtest !</p>
           <p>Eh ouais mon gars t'as cru qu'il te suffirait de faire git clone pour que ca marche ?</p>
+          <p>Hey {this.state.text}</p>
         </div>
         <div className="App-buttons">
         </div>
       </div>
     );
   }
+
 }
 
 export default App;
